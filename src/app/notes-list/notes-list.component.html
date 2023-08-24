@@ -1,0 +1,31 @@
+<div class="notes-container">
+  <!-- Add the logout button at the top right corner -->
+  <button class="logout-button" (click)="logout()">Log Out</button>
+
+  <button class="view-shared-notes-button" (click)="viewSharedNotes()">View Shared Notes</button>
+
+  <h1>List of Notes</h1>
+
+  <!-- Add the search bar -->
+  <input type="text" class="search-bar" placeholder="Search topics..." (input)="filterTopics($event)" />
+
+  <h2>Select a topic to share:</h2>
+  <ul class="notes-list">
+    <li *ngFor="let note of filteredNotes" class="note-item">
+      <p (click)="toggleContent(note)">{{ note.title }}</p>
+      <button *ngIf="note.showContent" class="share-notes-button" (click)="shareNotes()">Share Notes</button>
+      <button *ngIf="note.showContent" class="share-notes-button" (click)="addNotes()">Add Note</button>
+      <p *ngIf="note.showContent">{{ note.content }}</p>
+    </li>
+    <!-- Add the "Not Found" message using ngIf -->
+    <div *ngIf="filteredNotes.length === 0" class="not-found-message">
+      Not Found
+    </div>
+  </ul>
+
+  <div class="button-container">
+    <button class="add-note-button" (click)="addNotes()">New Note</button>
+    <p class="delete-notes-description">If you select "Delete," the notes will be permanently deleted.</p>
+    <button class="delete-notes-button">Delete Notes</button>
+  </div>
+</div>

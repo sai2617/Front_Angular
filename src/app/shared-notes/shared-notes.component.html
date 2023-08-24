@@ -1,0 +1,22 @@
+
+
+<div class="shared-notes-container">
+  <button class="logout-button" (click)="logout()">Log Out</button>
+  <h1>Shared Notes</h1>
+
+  <input type="text" class="search-bar" placeholder="Search notes..." (input)="filterNotes($event)" />
+
+  <div *ngFor="let note of filteredNotes" class="note-item">
+    <p class="note-title">{{ note.title }}</p>
+    <button class="user-block" (click)="toggleNoteContent(note)">{{ note.user }}</button>
+
+    <div *ngIf="note.showContent" class="note-content">
+      <textarea [(ngModel)]="note.content" [readonly]="!note.editMode"></textarea>
+      <button *ngIf="note.editMode" class="save-button" (click)="saveContent(note)">Save</button>
+    </div>
+  </div>
+
+  <div *ngIf="filteredNotes.length === 0" class="not-found-message">
+    No shared notes available.
+  </div>
+</div>

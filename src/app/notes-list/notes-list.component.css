@@ -1,0 +1,153 @@
+/* CSS for notes.component.html */
+
+/* Main container for the notes */
+.notes-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Log Out button */
+.logout-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #45a049;
+}
+
+/* Search bar */
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* List of notes */
+.notes-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.note-item {
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Not Found message */
+.not-found-message {
+  color: #777;
+  text-align: center;
+}
+
+/* Button container */
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-note-button,
+.delete-notes-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-notes-description {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+}
+
+.add-note-button:hover,
+.delete-notes-button:hover {
+  background-color: #45a049;
+}
+
+/* Note details */
+.note-details {
+  margin-top: 20px;
+}
+
+.note-details h3 {
+  margin-bottom: 10px;
+}
+
+.note-details textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.note-details button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.note-details button:last-child {
+  margin-right: 0;
+}
+
+.note-details button:hover {
+  background-color: #45a049;
+}
+
+.share-notes-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.share-notes-button:hover {
+  background-color: #45a049;
+}
+
+
+.view-shared-notes-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px; 
+}
+
+.view-shared-notes-button:hover {
+  background-color: #45a049;
+}
+

@@ -1,0 +1,28 @@
+<div class="container">
+  
+
+  <!-- Display the name of the logged-in user -->
+  <h2>Welcome! New Notes can be taken here </h2>
+
+  <div class="notes-list">
+    <div class="note-item" *ngFor="let note of notes" (click)="selectNote(note)">
+      {{ note.title }}
+    </div>
+  </div>
+
+  <div class="note-details">
+    <div *ngIf="selectedNote">
+      <h3>{{ selectedNote.title }}</h3>
+      <textarea [(ngModel)]="selectedNote.content"></textarea>
+      <button (click)="saveNote()">Save</button>
+      <button (click)="deleteNote()">Delete</button>
+    </div>
+
+    <div *ngIf="!selectedNote">
+      <h3>Create New Note</h3>
+      <input [(ngModel)]="newNote.title" placeholder="Title">
+      <textarea [(ngModel)]="newNote.content" placeholder="Content"></textarea>
+      <button (click)="saveNote()">Save</button>
+    </div>
+  </div>
+</div>

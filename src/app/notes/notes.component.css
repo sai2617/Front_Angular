@@ -1,0 +1,67 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #006400; /* Dark Green */
+}
+
+.notes-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.note-item {
+  margin-bottom: 10px;
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.note-item:hover {
+  background-color: #d3ffd3; /* Light Green on hover */
+}
+
+.note-details {
+  margin-top: 20px;
+}
+
+.note-details h3 {
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  resize: vertical;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #006400; /* Dark Green */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #008000; /* Light Green on hover */
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #666;
+}

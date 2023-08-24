@@ -1,0 +1,77 @@
+.shared-notes-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.shared-notes-container h1 {
+  text-align: center;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.note-item {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.note-title {
+  font-weight: bold;
+}
+
+.user-block {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.note-content {
+  margin-top: 10px;
+}
+
+button[readonly] {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+button[readonly]:hover {
+  background-color: #ddd;
+}
+
+.not-found-message {
+  margin-top: 20px;
+  text-align: center;
+  color: #777;
+}
+
+.logout-button {
+  
+  
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-button{
+
+  background-color: #4CAF50;
+  color: #fff;
+
+}
