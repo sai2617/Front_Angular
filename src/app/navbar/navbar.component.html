@@ -1,4 +1,4 @@
-<nav class="navbar">
+<nav class="navbar" *ngIf="isLoggedIn">
     <ul class="nav-list">
       <li class="nav-item"><a routerLink="/notes-list">Notes List</a></li>
       <li class="nav-item"><a routerLink="/shared-notes">Shared Notes</a></li>
