@@ -10,14 +10,19 @@ And This is testing for CD in Jenkins auto running
 In jenkins after pasting the github project link have to give
 
 In one windows executable file
+
 npm install
+
 ng build --prod
+
 mv dist/Test/* /var/www/html
 
 In one windows executable file
+
 npm run ng -- build
 
 # Note
+
 In poll SCM if we give * * * * * it will run for every minute for build and * * * * H every hour
 
 
