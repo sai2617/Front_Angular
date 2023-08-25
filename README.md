@@ -17,6 +17,9 @@ mv dist/Test/* /var/www/html
 In one windows executable file
 npm run ng -- build
 
+# Note
+In poll SCM if we give * * * * * it will run for every minute for build and * * * * H every hour
+
 
 # MyApp
 
@@ -45,3 +48,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
