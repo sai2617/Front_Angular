@@ -54,3 +54,8 @@
   text-align: center;
   margin-top: 10px;
 }
+
+h1 {
+  text-align: center;
+  color: #e4f6da; /* Dark Green */
+}
