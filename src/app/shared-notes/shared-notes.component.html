@@ -1,5 +1,3 @@
-
-
 <div class="shared-notes-container">
   <button class="logout-button" (click)="logout()">Log Out</button>
   <h1>Shared Notes</h1>
@@ -19,4 +17,19 @@
   <div *ngIf="filteredNotes.length === 0" class="not-found-message">
     No shared notes available.
   </div>
+
+  <h1>Discussions</h1>
+  <ul>
+    <li *ngFor="let discussion of discussions">
+      <div class="discussion-item">
+        <p class="discussion-title">{{ discussion.title }}</p>
+        <button class="discussion-button" (click)="toggleDiscussion(discussion)" [ngClass]="{'green-button': discussion.showContent}">
+          {{ discussion.showContent ? 'Close Discussion' : 'Open Discussion' }}
+        </button>
+        <div *ngIf="discussion.showContent" class="discussion-content">
+          {{ discussion.content }}
+        </div>
+      </div>
+    </li>
+  </ul>
 </div>

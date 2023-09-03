@@ -75,3 +75,39 @@ button[readonly]:hover {
   color: #fff;
 
 }
+
+
+
+.discussion-item {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.discussion-title {
+  font-weight: bold;
+}
+
+.discussion-button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; 
+}
+
+.discussion-content {
+  margin-top: 10px;
+}
+
+.discussion-button[readonly] {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.discussion-button[readonly]:hover {
+  background-color: #ddd;
+}
