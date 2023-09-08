@@ -7,7 +7,7 @@ import { Note } from './note.model';
   providedIn: 'root'
 })
 export class NoteService {
-  private apiUrl = 'http://localhost:8084/api/employee';
+  private apiUrl = 'http://localhost:8084/api/v1/note';
 
   constructor(private http: HttpClient) { }
 

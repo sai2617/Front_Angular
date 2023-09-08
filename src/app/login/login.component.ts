@@ -21,10 +21,7 @@ export class LoginComponent {
   ) {}
 
   Login() {
-    // ... your login logic ...
-
-    
-       
+          
     let bodyData = {
       email: this.email,
       password: this.password,

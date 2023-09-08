@@ -25,9 +25,13 @@ export class NotesComponent implements OnInit {
   ngOnInit(): void {
     // Assume you have already set the employeename in LoginComponent and shared through SharedDataService.
     // For demonstration, I am setting it manually here.
-    this.employeename = "John Doe";
+    this.employeename = this.employeename;
     this.loadAllNotes();
   }
+
+
+  // This is not working so I dont want to move from here to notes-list if it works it should be in notes-list component
+  // This is the intitial plan of my project to keep everything in notes component and without notes-list component
 
   loadAllNotes(): void {
     this.noteService.getAllNotes().subscribe(

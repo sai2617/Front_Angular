@@ -4,19 +4,21 @@
   <!-- Display the name of the logged-in user -->
   <h2>Welcome! New Notes can be taken here </h2>
 
-  <div class="notes-list">
+  <!-- Code which is not responding -->
+
+  <!-- <div class="notes-list">
     <div class="note-item" *ngFor="let note of notes" (click)="selectNote(note)">
       {{ note.title }}
     </div>
-  </div>
+  </div> -->
 
-  <div class="note-details">
+  <!-- <div class="note-details">
     <div *ngIf="selectedNote">
       <h3>{{ selectedNote.title }}</h3>
       <textarea [(ngModel)]="selectedNote.content"></textarea>
       <button (click)="saveNote()">Save</button>
       <button (click)="deleteNote()">Delete</button>
-    </div>
+    </div> -->
 
     <div *ngIf="!selectedNote">
       <h3>Create New Note</h3>
@@ -25,4 +27,4 @@
       <button (click)="saveNote()">Save</button>
     </div>
   </div>
-</div>
+<!-- </div> -->
